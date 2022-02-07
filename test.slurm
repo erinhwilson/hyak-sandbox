@@ -5,10 +5,11 @@
 # change job name as apropriate
 #SBATCH --job-name=ErinTest
 #SBATCH --output=ErinTest.log
+
 # run time, change this as necessary
 #SBATCH --time=2:00:00
 # where should the job run?
-#SBATCH --chdir=/gscratch/brl/ewilson6
+#SBATCH --chdir=/gscratch/brl/ewilson6/workspace/hyak-sandbox
 
 # these likely won't need to be changed
 #SBATCH --account=brl
@@ -32,4 +33,4 @@
 #SBATCH --export=all
 
 # run the python script
-python erin.py
+python test.py
